@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Deployment | Windows IIS Server</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <header class="hero-gradient text-white py-20 px-6 shadow-lg">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="bg-white/20 border border-white/30 px-3 py-1 rounded text-xs font-bold tracking-widest uppercase">Production Environment</span>
+                <span class="bg-green-400 w-2 h-2 rounded-full animate-pulse"></span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight">
+                IIS Web Server <br><span class="text-blue-200">Cloud Deployment</span>
+            </h1>
+            <p class="text-xl text-blue-100 max-w-2xl leading-relaxed">
+                Successfully provisioned a Windows VM instance and configured Internet Information Services (IIS) to host this responsive web application.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto -mt-10 px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hover:shadow-2xl transition">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-6 text-2xl">🌐</div>
+                <h3 class="text-xl font-bold mb-3">HTTP Hosting</h3>
+                <p class="text-slate-600 text-sm">Static content delivery optimized via IIS 10.0 architecture for high availability.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hover:shadow-2xl transition">
+                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 mb-6 text-2xl">🛡️</div>
+                <h3 class="text-xl font-bold mb-3">VM Security</h3>
+                <p class="text-slate-600 text-sm">Network Security Groups (NSG) configured to allow Port 80 traffic while maintaining VM integrity.</p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-100 hover:shadow-2xl transition">
+                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mb-6 text-2xl">⚙️</div>
+                <h3 class="text-xl font-bold mb-3">Scalable Logic</h3>
+                <p class="text-slate-600 text-sm">The environment is prepared for backend integration using ASP.NET or Python FastCGI.</p>
+            </div>
+
+        </div>
+
+        <div class="mt-16 bg-slate-900 rounded-3xl p-10 text-center text-white">
+            <h2 class="text-2xl font-bold mb-4">Project Overview</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto italic">"This project demonstrates the ability to bridge cloud infrastructure with front-end delivery."</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="px-4 py-2 bg-slate-800 rounded-md text-sm font-mono text-blue-300">Windows Server</div>
+                <div class="px-4 py-2 bg-slate-800 rounded-md text-sm font-mono text-blue-300">IIS 10.0</div>
+                <div class="px-4 py-2 bg-slate-800 rounded-md text-sm font-mono text-blue-300">Cloud VM</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
